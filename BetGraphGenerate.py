@@ -166,7 +166,6 @@ class App:
         scroll_canvas.create_image(0, 0, image=photo, anchor="nw")
         scroll_canvas.config(scrollregion=(0, 0, img.width, img.height))
 
-        # Scroll com a roda do mouse
         def on_scroll(event):
             scroll_canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
 
